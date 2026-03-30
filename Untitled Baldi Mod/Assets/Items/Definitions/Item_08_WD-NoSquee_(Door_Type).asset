@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7c073c3de49f4448b92bbed512c341, type: 3}
+  m_Name: Item_08_WD-NoSquee_(Door_Type)
+  m_EditorClassIdentifier: 
+  itemID: 8
+  itemName: WD-NoSquee (Door Type)
+  pickupName: Pickup_WD-3D
+  icon: {fileID: 2800000, guid: 94638becc4b141946924ff8037e75333, type: 3}
+  useSound: {fileID: 0}

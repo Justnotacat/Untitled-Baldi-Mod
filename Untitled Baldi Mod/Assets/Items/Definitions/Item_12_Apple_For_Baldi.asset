@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7c073c3de49f4448b92bbed512c341, type: 3}
+  m_Name: Item_12_Apple_For_Baldi
+  m_EditorClassIdentifier: 
+  itemID: 12
+  itemName: Apple For Baldi
+  pickupName: Pickup_Apple
+  icon: {fileID: 2800000, guid: 2737ada3ccc38884b94a743575695bf9, type: 3}
+  useSound: {fileID: 0}
