@@ -99,7 +99,11 @@ public class ElevatorController : MonoBehaviour
         Debug.Log("[Elevator] Sequence started.");
 
         PlayerScript ps = player.GetComponent<PlayerScript>();
-        if (ps != null) ps.canMove = false;
+        if (ps != null)
+        {
+            ps.canMove = false;
+            ps.height = playerSnapPosition.y;
+        }
 
         // 1 ── Snap player smoothly to elevator centre
         Debug.Log($"[Elevator] Snapping player. Current localPos: {player.localPosition}, Target: {playerSnapPosition}");
