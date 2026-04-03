@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6547A759-9A88-E3A3-E352-BE71DF493CFD}</ProjectGuid>
+    <ProjectGuid>{1E3B45B2-5D1F-3175-A2C0-FBF5EFE9C719}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,7 +53,7 @@
     <UnityVersion>2021.3.16f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TheBCMHT\Scripts\TheBCMHT_Helper.cs" />
@@ -64,6 +64,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Scripts\Core\UI\UIController.cs" />
     <Compile Include="Assets\Scripts\YouWonScript.cs" />
+    <Compile Include="Assets\Items\Scripts\ItemPickupCallback.cs" />
     <Compile Include="Assets\Scripts\GameOverScript.cs" />
     <Compile Include="Assets\Scripts\Core\GameControllerScript.cs" />
     <Compile Include="Assets\Scripts\Core\UI\Buttons\BasicButtonScript.cs" />
@@ -79,15 +80,18 @@
     <Compile Include="Assets\Scripts\PlayerFunctions\ItemFunctions\PickupScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\Items\Scripts\ItemDefinition.cs" />
     <Compile Include="Assets\Scripts\WarningScreenScript.cs" />
     <Compile Include="Assets\Scripts\Core\UI\MenuController.cs" />
     <Compile Include="Assets\Scripts\EndlessTextScript.cs" />
     <Compile Include="Assets\Scripts\Core\UI\Settings\OptionsManager.cs" />
+    <Compile Include="Assets\Material\Pincushion\PincushionRenderFeature.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\Scripts\AmbienceScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\Core\UI\Settings\MouseSliderScript.cs" />
+    <Compile Include="Assets\Items\Scripts\CharliePickup.cs" />
     <Compile Include="Assets\Scripts\PlayerFunctions\DoorFunctions\ExitTriggerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerFunctions\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\NPCFunctions\HuggingScript.cs" />
@@ -96,9 +100,11 @@
     <Compile Include="Assets\Scripts\Core\UI\Settings\DefaultSettingsScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\Scripts\NPCFunctions\DebugFirstPrizeScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerFunctions\ItemFunctions\CharlieThrow.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\Scripts\PlayerFunctions\DoorFunctions\DoorScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+    <Compile Include="Assets\ButtonScript.cs" />
     <Compile Include="Assets\Scripts\NPCFunctions\Script.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\NPCFunctions\CraftersTriggerScript.cs" />
@@ -115,12 +121,14 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\Scripts\Core\UI\MaterialKit\DpCanvasScaler.cs" />
     <Compile Include="Assets\Scripts\NPCFunctions\AgentTest.cs" />
+    <Compile Include="Assets\Charlie\CharlieController.cs" />
     <Compile Include="Assets\Scripts\NPCFunctions\CraftersScript.cs" />
     <Compile Include="Assets\Scripts\PlayerFunctions\ItemFunctions\NotebookScript.cs" />
     <Compile Include="Assets\Scripts\PlayerFunctions\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerFunctions\FacultyTriggerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerFunctions\CameraScript_Simple.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\ReticleScript.cs" />
     <Compile Include="Assets\Scripts\EntranceScript.cs" />
     <Compile Include="Assets\Scripts\NPCFunctions\ClickableTest.cs" />
     <Compile Include="Assets\Scripts\NPCFunctions\BaldiScript.cs" />
@@ -131,6 +139,8 @@
     <Compile Include="Assets\Scripts\NPCFunctions\FirstPrizeSpriteScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\NeedMoreScript.cs" />
+    <Compile Include="Assets\Scripts\CreatePickupMenuItem.cs" />
+    <Compile Include="Assets\Items\Scripts\ItemUseHandler.cs" />
     <Compile Include="Assets\Scripts\Core\UI\Buttons\ExitButtonScript.cs" />
     <Compile Include="Assets\Scripts\Core\Singleton.cs" />
     <Compile Include="Assets\TheBCMHT\Scripts\Readme.cs" />
@@ -145,17 +155,22 @@
     <Compile Include="Assets\TheBCMHT\Scripts\MazeCell.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Scripts\Core\UI\MathGameScript.cs" />
+    <Compile Include="Assets\Scripts\ElevatorController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Scripts\PlayerFunctions\CameraScript.cs" />
     <Compile Include="Assets\Scripts\ScoreScript.cs" />
+    <Compile Include="Assets\Items\Scripts\ItemRegistry.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scene\Scenes\HandControllerScript.cs" />
+    <Compile Include="Assets\Material\Pincushion\PincushionRenderPass.cs" />
     <Compile Include="Assets\Scripts\OnAwakeTrigger.cs" />
+    <Compile Include="Assets\Scripts\StartLoopAudio.cs" />
     <Compile Include="Assets\TheBCMHT\Scripts\TileType.cs" />
     <Compile Include="Assets\Scripts\TextUnderliner.cs" />
     <Compile Include="Assets\Scripts\Core\DebugScript.cs" />
     <Compile Include="Assets\Scripts\NPCFunctions\NavMeshAgentRay.cs" />
     <Compile Include="Assets\Scripts\NPCFunctions\AILocationSelectorScript.cs" />
+    <Compile Include="Assets\Items\Scripts\ItemRegistryGenerator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Scripts\PlayerFunctions\ItemFunctions\TapePlayerScript.cs" />
     <Compile Include="Assets\Scripts\NoKeyboardScript.cs" />
@@ -164,26 +179,11 @@
     <Compile Include="Assets\Scripts\Core\UI\JumpRopeScript.cs" />
     <Compile Include="Assets\Scripts\AudioQueueScript.cs" />
     <Compile Include="Assets\Scripts\PlayerFunctions\ItemFunctions\BsodaSparyScript.cs" />
+    <Compile Include="Assets\Material\Pincushion\PincushionEffect.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\Core\UI\Settings\UiManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TheBCMHT\Scripts\RoomChildDat.cs" />
-    <Compile Include="Assets\Material\Pincushion\PincushionEffect.cs" />
-    <Compile Include="Assets\Material\Pincushion\PincushionRenderFeature.cs" />
-    <Compile Include="Assets\Material\Pincushion\PincushionRenderPass.cs" />
-    <Compile Include="Assets\Items\Scripts\ItemDefinition.cs" />
-    <Compile Include="Assets\Items\Scripts\ItemUseHandler.cs" />
-    <Compile Include="Assets\Items\Scripts\ItemRegistry.cs" />
-    <Compile Include="Assets\Items\Scripts\ItemRegistryGenerator.cs" />
-    <Compile Include="Assets\Scripts\StartLoopAudio.cs" />
-    <Compile Include="Assets\Items\Scripts\ItemPickupCallback.cs" />
-    <Compile Include="Assets\Items\Scripts\CharliePickup.cs" />
-    <Compile Include="Assets\Scripts\CreatePickupMenuItem.cs" />
-    <Compile Include="Assets\Charlie\CharlieController.cs" />
-    <Compile Include="Assets\Scripts\PlayerFunctions\ItemFunctions\CharlieThrow.cs" />
-    <Compile Include="Assets\ButtonScript.cs" />
-    <Compile Include="Assets\ReticleScript.cs" />
-    <Compile Include="Assets\Scripts\ElevatorController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
@@ -907,11 +907,11 @@
     <Reference Include="Analytics">
       <HintPath>Library\ScriptAssemblies\Analytics.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
@@ -954,13 +954,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="ThunkMonkey.FluidMidi.Runtime.csproj">
-      <Project>{5680C874-8451-7317-0AC5-18B4ED4DB67D}</Project>
-      <Name>ThunkMonkey.FluidMidi.Runtime</Name>
-    </ProjectReference>
     <ProjectReference Include="ThunkMonkey.FluidMidi.Editor.csproj">
-      <Project>{D112CDEF-1C89-8397-D110-B9CE1C0FFD00}</Project>
+      <Project>{60BCFC07-9F63-6BAE-FD77-54FF295700CC}</Project>
       <Name>ThunkMonkey.FluidMidi.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ThunkMonkey.FluidMidi.Runtime.csproj">
+      <Project>{9461CB94-71E4-42E2-E477-3E2D1F757829}</Project>
+      <Name>ThunkMonkey.FluidMidi.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

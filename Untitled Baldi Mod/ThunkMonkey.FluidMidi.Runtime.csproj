@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5680C874-8451-7317-0AC5-18B4ED4DB67D}</ProjectGuid>
+    <ProjectGuid>{9461CB94-71E4-42E2-E477-3E2D1F757829}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>ThunkMonkey.FluidMidi.Runtime</AssemblyName>
@@ -53,19 +53,19 @@
     <UnityVersion>2021.3.16f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Fluid MIDI\Runtime\ToggleIntFoldoutAttribute.cs" />
     <Compile Include="Assets\Fluid MIDI\Runtime\Logger.cs" />
-    <Compile Include="Assets\Fluid MIDI\Runtime\ToggleInt.cs" />
-    <Compile Include="Assets\Fluid MIDI\Runtime\Playlist.cs" />
-    <Compile Include="Assets\Fluid MIDI\Runtime\Settings.cs" />
-    <Compile Include="Assets\Fluid MIDI\Runtime\StreamingAsset.cs" />
-    <Compile Include="Assets\Fluid MIDI\Runtime\Api.cs" />
     <Compile Include="Assets\Fluid MIDI\Runtime\Synthesizer.cs" />
+    <Compile Include="Assets\Fluid MIDI\Runtime\Playlist.cs" />
+    <Compile Include="Assets\Fluid MIDI\Runtime\Api.cs" />
     <Compile Include="Assets\Fluid MIDI\Runtime\BitFieldAttribute.cs" />
+    <Compile Include="Assets\Fluid MIDI\Runtime\StreamingAsset.cs" />
+    <Compile Include="Assets\Fluid MIDI\Runtime\ToggleInt.cs" />
     <Compile Include="Assets\Fluid MIDI\Runtime\SongPlayer.cs" />
+    <Compile Include="Assets\Fluid MIDI\Runtime\ToggleIntFoldoutAttribute.cs" />
+    <Compile Include="Assets\Fluid MIDI\Runtime\Settings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fluid MIDI\Runtime\ThunkMonkey.FluidMidi.Runtime.asmdef" />

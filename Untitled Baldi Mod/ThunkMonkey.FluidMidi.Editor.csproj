@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D112CDEF-1C89-8397-D110-B9CE1C0FFD00}</ProjectGuid>
+    <ProjectGuid>{60BCFC07-9F63-6BAE-FD77-54FF295700CC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>ThunkMonkey.FluidMidi.Editor</AssemblyName>
@@ -53,12 +53,12 @@
     <UnityVersion>2021.3.16f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Fluid MIDI\Editor\ToggleIntFoldoutPropertyDrawer.cs" />
     <Compile Include="Assets\Fluid MIDI\Editor\BitFieldPropertyDrawer.cs" />
     <Compile Include="Assets\Fluid MIDI\Editor\StreamingAssetPropertyDrawer.cs" />
-    <Compile Include="Assets\Fluid MIDI\Editor\ToggleIntFoldoutPropertyDrawer.cs" />
     <Compile Include="Assets\Fluid MIDI\Editor\ToggleIntPropertyDrawer.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -734,7 +734,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ThunkMonkey.FluidMidi.Runtime.csproj">
-      <Project>{5680C874-8451-7317-0AC5-18B4ED4DB67D}</Project>
+      <Project>{9461CB94-71E4-42E2-E477-3E2D1F757829}</Project>
       <Name>ThunkMonkey.FluidMidi.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
